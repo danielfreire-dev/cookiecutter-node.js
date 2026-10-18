@@ -138,11 +138,22 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 
-# env
+# local env files
 .env
+.env*
+.env.local
+
+# wrangler files
+.wrangler
+.dev.vars
+.dev.*
+.dev.vars*
+!.dev.vars.example
+wrangler.jsonc
 
 # AI
 .roo/
+.zoo/
 .idea/
 .continue/
 specs/
@@ -153,3 +164,7 @@ answers.json
 skills/
 .claude/
 claude/
+
+#miscellanea
+todo.md
+

@@ -1,0 +1,595 @@
+{
+	/* 🖥️ Editor Core Settings */
+
+	// Basic Editor Configuration
+	"editor.fontSize": 24,
+	"editor.fontFamily": "Fira Code Retina",
+	"editor.fontLigatures": "'calt', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06'",
+	"editor.tabSize": 2,
+	"editor.wordWrap": "off",
+	"editor.semanticHighlighting.enabled": true,
+	"editor.autoClosingBrackets": "always",
+	"editor.autoClosingQuotes": "always",
+	"editor.autoClosingComments": "always",
+	"editor.autoIndentOnPaste": true,
+	"editor.inlineSuggest.enabled": true,
+	"editor.inlineSuggest.showToolbar": "always",
+	"editor.guides.bracketPairs": true,
+	"editor.bracketPairColorization.enabled": true,
+	"editor.inlayHints.enabled": "offUnlessPressed",
+	"editor.rulers": [120],
+	"editor.codeActions.triggerOnFocusChange": true,
+
+	// Formatting
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnPaste": true,
+	"editor.formatOnSave": true,
+	"editor.formatOnType": true,
+	"prettier.printWidth": 120,
+
+	// File Handling
+	"files.autoSave": "onFocusChange",
+	"files.trimTrailingWhitespace": true,
+	"files.trimFinalNewlines": true,
+	"files.associations": {
+		"*.dbclient-js": "javascript",
+		"*.css": "css",
+		"css": "css",
+		"*.ejs": "html",
+		".env*": "dotenv",
+		"*.rb": "ruby",
+	},
+
+	// Telemetry & Privacy
+	"telemetry.telemetryLevel": "off",
+	"update.mode": "manual",
+	"extensions.autoCheckUpdates": true,
+	"security.workspace.trust.untrustedFiles": "open",
+
+	/* 🎨 Workbench & UI */
+
+	// Themes
+	"workbench.colorTheme": "Mariana Pro (Cool)",
+	"workbench.iconTheme": "vscode-icons",
+	"workbench.startupEditor": "none",
+	"workbench.editorAssociations": {
+		"*.svg": "default",
+	},
+	"workbench.colorCustomizations": {
+		"editor.lineHighlightBackground": "#1073cf2d",
+		"editor.lineHighlightBorder": "#9fced11f",
+		"editorBracketHighlight.foreground1": "#ffffff",
+		"editorBracketHighlight.foreground2": "#B48EAD",
+		"editorBracketHighlight.foreground3": "#A3BE8C",
+		"editorBracketHighlight.foreground4": "#EBCB8B",
+		"editorBracketHighlight.foreground5": "#D08770",
+		"editorBracketHighlight.foreground6": "#BF616A",
+		"editorBracketHighlight.foreground7": "#abb2c0",
+		"editorBracketHighlight.unexpectedBracket.foreground": "#db6165",
+	},
+
+	// Explorer
+	"explorer.confirmDragAndDrop": false,
+	"explorer.confirmDelete": false,
+	"explorer.compactFolders": false,
+
+	// SCM
+	"scm.compactFolders": false,
+
+	// Panel & Views
+	"claudeCode.preferredLocation": "panel",
+
+	/* 🌐 HTML/CSS/JavaScript/Web */
+
+	// HTML Formatting
+	"html.format.contentUnformatted": "",
+	"html.format.templating": true,
+	"html.format.indentHandlebars": true,
+	"html.format.indentInnerHtml": true,
+	"html.format.wrapLineLength": 80,
+
+	// CSS Configuration
+	"css.format.braceStyle": "expand",
+	"css.format.spaceAroundSelectorSeparator": true,
+	"css.lint.boxModel": "warning",
+	"css.lint.compatibleVendorPrefixes": "warning",
+	"css.lint.duplicateProperties": "warning",
+	"css.lint.float": "error",
+	"css.lint.important": "warning",
+	"css.lint.importStatement": "warning",
+	"css.lint.zeroUnits": "warning",
+	"css.autoValidation": "Save",
+	"css.enabledLanguages": ["html", "javascript", "typescript"],
+	"css.styleSheets": [
+		"node_modules/bootstrap/dist/css/bootstrap.css",
+		"https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css",
+		"src/base-styles.ts",
+		"**/${fileBasenameNoExtension}-css.ts",
+		"src/**/*.css",
+		"*.css",
+	],
+
+	// LESS
+	"less.format.spaceAroundSelectorSeparator": true,
+
+	// Emmet
+	"emmet.useInlineCompletions": true,
+	"emmet.variables": {
+		"lang": "en",
+		"charset": "UTF-8",
+	},
+	"emmet.includeLanguages": {
+		"vue-html": "html",
+		"javascript": "javascriptreact",
+		"typescript": "typescriptreact",
+		"django-html": "html",
+	},
+	"emmet.preferences": {},
+
+	// Autocomplete Extensions
+	"html-css-class-completion.enableEmmetSupport": true,
+	"html-css-class-completion.CSSLanguages": ["css", "sass", "scss"],
+	"html-css-class-completion.HTMLLanguages": [
+		"html",
+		"vue",
+		"razor",
+		"blade",
+		"handlebars",
+		"twig",
+		"django-html",
+		"php",
+		"markdown",
+		"erb",
+		"ejs",
+		"svelte",
+	],
+	"html-to-css-autocompletion.autocompletionFilesScope": "workspace",
+	"html-to-css-autocompletion.getSelectorsFromFileTypes": ["html", "php", "ejs", "js", "jsx", "ts", "tsx"],
+	"css-auto-prefix.prefixes": {
+		"transform": ["webkit", "moz", "ms", "o"],
+		"transition": ["webkit", "moz", "ms", "o"],
+		"border-radius": ["webkit", "moz", "ms", "o"],
+		"animation": ["webkit"],
+		"box-reflect": ["webkit"],
+		"filter": ["webkit"],
+		"font-feature-settings": ["webkit", "moz"],
+		"backface-visibility": ["webkit"],
+		"box-decoration-break": ["webkit"],
+		"hyphens": ["webkit", "moz", "ms"],
+		"marquee-direction": ["webkit"],
+		"marquee-play-count": ["webkit"],
+		"marquee-speed": ["webkit"],
+		"marquee-style": ["webkit"],
+		"text-combine-upright": ["webkit", "moz", "ms"],
+		"text-decoration-color": ["moz"],
+		"text-decoration-line": ["moz"],
+		"text-decoration-style": ["moz"],
+		"text-orientation": ["webkit"],
+		"writing-mode": ["webkit", "ms"],
+	},
+
+	// JavaScript/TypeScript
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+	},
+
+	// Debugging
+	"debug.javascript.debugByLinkOptions": "on",
+
+	// Live Server
+	"liveServer.settings.donotShowInfoMsg": true,
+	"liveServer.settings.fullReload": true,
+	"liveServer.settings.donotVerifyTags": false,
+	"livePreview.debugOnExternalPreview": true,
+
+	/* 🐍 Python */
+
+	"python.globalModuleInstallation": true,
+	"python.createEnvironment.trigger": "prompt",
+	"python.analysis.typeCheckingMode": "strict",
+
+	// Formatters
+	"[python]": {
+		// "editor.defaultFormatter": "ms-python.black-formatter",
+		"editor.formatOnSave": true,
+	},
+
+	// Linters
+	"python.linting.banditEnabled": true,
+	"python.linting.flake8Enabled": true,
+	"flake8.showNotifications": "onError",
+	"flake8.args": ["--max-line-length=120"],
+
+	// Ruff Configuration
+	"ruff.format.preview": true,
+	"ruff.format.enabled": true,
+	"ruff.lint.preview": true,
+	"ruff.configuration": {
+		"lint": {
+			"unfixable": ["F401"],
+			"extend-select": ["TID251"],
+			"flake8-tidy-imports": {
+				"banned-api": {
+					"typing.TypedDict": {
+						"msg": "Use `typing_extensions.TypedDict` instead",
+					},
+				},
+			},
+		},
+		"lineLength": 100,
+		"format": {
+			"quote-style": "double",
+		},
+		"exclude": ["**/tests/**"],
+		"showSyntaxErrors": true,
+	},
+
+	// Debugging
+	"debugpy.showPythonInlineValues": true,
+
+	/* 💎 Ruby */
+
+	"ruby.locate": {
+		"exclude": "{**/@(test|spec|tmp|.*),**/@(test|spec|tmp|.*)/**,**/*_spec.rb}",
+		"include": "**/*.rb",
+	},
+	"ruby.rubocop.executePath": "/usr/bin/",
+	"ruby.rubocop.onSave": true,
+	"[ruby]": {
+		"editor.formatOnSave": true,
+		"editor.formatOnType": true,
+		"editor.tabSize": 2,
+		"editor.insertSpaces": true,
+		"editor.semanticHighlighting.enabled": true,
+		"files.trimTrailingWhitespace": true,
+		"files.insertFinalNewline": true,
+		"files.trimFinalNewlines": true,
+		"editor.rulers": [120],
+	},
+	"code-runner.languageIdToFileExtensionMap": {
+		"ruby.lint": {
+			"rubocop": true,
+		},
+		"bat": ".bat",
+		"powershell": ".ps1",
+		"typescript": ".ts",
+	},
+
+	/* 🧪 Testing & Development Tools */
+
+	// Quokka.js
+	"quokka.automaticRestart": true,
+	"quokka.showValueOnMultilineSelection": true,
+	"quokka.automaticStartRegex": "\\.(ts|js|jsx|tsx|html|htmx)$",
+	"quokka.colors": {
+		"covered": "#62b455",
+		"errorPath": "#ffa0a0",
+		"errorSource": "#fe536a",
+		"notCovered": "#cccccc",
+		"partiallyCovered": "#d2a032",
+	},
+
+	// Better Comments
+	"better-comments.highlightPlainText": true,
+
+	// Console Ninja
+	"console-ninja.featureSet": "Community",
+
+	// Total TypeScript
+	"totalTypeScript.hideAllTips": false,
+	"totalTypeScript.hideBasicTips": false,
+	"totalTypeScript.hiddenTips": [
+		"variable-type-annotation",
+		"array-type",
+		"basic-types",
+		"function-return-type",
+		"union-type",
+		"typing-function-parameters",
+		"undefined-keyword",
+		"passing-generics-to-types",
+		"record-utility-type",
+		"interface-declaration",
+		"ts-object-type",
+		"type-alias-declaration",
+		"typeof",
+		"as-assertion",
+		"keyof",
+		"as-const",
+		"as-const-on-object",
+		"literal-type",
+		"type-predicate",
+		"optional-object-property",
+		"any-type",
+		"non-null-expression",
+		"null-keyword",
+	],
+
+	/* 🐛 Linting & Error Checking */
+
+	// ESLint
+	"eslint.enable": true,
+	"eslint.debug": true,
+	"eslint.executeAutofix": true,
+	"eslint.format.enable": true,
+	"eslint.lintTask.enable": true,
+	"eslint.ignoreUntitled": true,
+	"eslint.onIgnoredFiles": "warn",
+	"eslint.run": "onSave",
+	"eslint.runtime": "",
+	"eslint.validate": [
+		"javascript",
+		"javascriptreact",
+		"typescript",
+		"typescriptreact",
+		"json",
+		"jsonc",
+		"json5",
+		"markdown",
+		"html",
+		"css",
+		"scss",
+		"less",
+	],
+	"eslint.rules.customizations": [
+		{
+			"rule": "prefer-const",
+			"severity": "off",
+		},
+		{ "rule": "no-var", "severity": "off" },
+	],
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": "explicit",
+	},
+
+	// LTEX (Grammar/Language Checker)
+	"ltex.additionalRules.enablePickyRules": true,
+	"ltex.checkFrequency": "save",
+	"ltex.completionEnabled": true,
+	"ltex.diagnosticSeverity": "information",
+
+	// Color Highlight
+	"color-highlight.matchWords": true,
+	"color-highlight.matchRgbWithNoFunction": true,
+	"color-highlight.matchHslWithNoFunction": true,
+
+	// Spell Checking
+	"cSpell.enableFiletypes": ["r", "ruby", "sql", "tex", "js", "html"],
+	"cSpell.caseSensitive": true,
+	"cSpell.userWords": ["Freire"],
+	"cSpell.languageSettings": [],
+	"cSpell.showAutocompleteSuggestions": true,
+	"cSpell.validateDirectives": true,
+	"cSpell.experimental.enableRegexpView": true,
+
+	// Auto Correct
+	"auto-correct.dictionary": [
+		{
+			"languages": ["*"],
+			"words": {
+				"hte": "the",
+				"mispell": "misspell",
+				"mispelled": "misspelled",
+				"{despa,sepe}rat{e,es,ed,ing,ely,ion,ions,or}": "{despe,sepa}rat{}",
+				"lenght": "length",
+			},
+			"useLargeList": false,
+		},
+		{
+			"languages": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+			"words": {
+				"cosnt": "const",
+				"functoin": "function",
+				"lenght": "length",
+			},
+		},
+	],
+
+	/* 🌳 Version Control (Git) */
+
+	"git.autofetch": true,
+	"git.alwaysShowStagedChangesResourceGroup": true,
+	"git.openRepositoryInParentFolders": "always",
+	"gitlens.telemetry.enabled": false,
+	"gitlens.advanced.messages": {
+		"suppressRebaseSwitchToTextWarning": true,
+	},
+	"gitlens.defaultTimeFormat": "HH:mm",
+	"gitlens.defaultDateFormat": "Do MMMM, YYYY",
+	"gitlens.rebaseEditor.ordering": "asc",
+	"gitlens.views.commitDetails.files.layout": "list",
+	"gitlens.ai.model": "gitkraken",
+	"gitlens.ai.gitkraken.model": "gemini:gemini-2.0-flash",
+
+	/* 📦 Package Management & Build Tools */
+
+	"npm.packageManager": "pnpm",
+	"npm-intellisense.scanDevDependencies": true,
+	"grunt.autoDetect": "on",
+
+	/* 📁 File Navigation & IntelliSense */
+
+	"path-intellisense.autoSlashAfterDirectory": true,
+	"path-intellisense.autoTriggerNextSuggestion": true,
+	"path-intellisense.mappings": {},
+	"path-intellisense.showHiddenFiles": true,
+	"path-intellisense.extensionOnImport": true,
+	"path-autocomplete.disableUpOneFolder": false,
+
+	/* 🏷️ Tag Management */
+
+	"auto-close-tag.activationOnLanguage": [
+		"xml",
+		"php",
+		"blade",
+		"ejs",
+		"jinja",
+		"javascript",
+		"javascriptreact",
+		"typescript",
+		"typescriptreact",
+		"plaintext",
+		"markdown",
+		"vue",
+		"liquid",
+		"erb",
+		"lang-cfml",
+		"cfml",
+		"HTML (EEx)",
+		"HTML (Eex)",
+		"plist",
+	],
+	"auto-close-tag.fullMode": true,
+	"auto-close-tag.insertSpaceBeforeSelfClosingTag": true,
+	"auto-close-tag.SublimeText3Mode": true,
+	"auto-close-tag.excludedTags": [
+		"area",
+		"base",
+		"br",
+		"col",
+		"command",
+		"embed",
+		"hr",
+		"img",
+		"input",
+		"keygen",
+		"link",
+		"meta",
+		"param",
+		"source",
+		"track",
+		"wbr",
+	],
+
+	/* 📝 Markdown */
+
+	"markdown.preview.fontSize": 18,
+	"markdown.preview.lineHeight": 1.8,
+	"markdown.preview.typographer": true,
+	"markdown.validate.enabled": true,
+
+	/* 🤖 AI & Coding Assistants */
+
+	// Continue
+	"continue.pauseTabAutocompleteOnBattery": true,
+	"continue.telemetryEnabled": false,
+
+	// Tabnine
+	"tabnine.experimentalAutoImports": true,
+	"tabnine.cloudHost": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJodHRwczovL2lkZW50aXR5dG9vbGtpdC5nb29nbGVhcGlzLmNvbS9nb29nbGUuaWRlbnRpdHkuaWRlbnRpdHl0b29sa2l0LnYxLklkZW50aXR5VG9vbGtpdCIsImlhdCI6MTcyMDc5OTg1NCwiZXhwIjoxNzIwODAzNDU0LCJpc3MiOiJmaXJlYmFzZS1hZG1pbnNkay02cjM0eUB0YWJuaW5lLWF1dGgtMzQwMDE1LmlhbS5nc2VydmljZWFjY291bnQuY29tIiwic3ViIjoiZmlyZWJhc2UtYWRtaW5zZGstNnIzNHlAdGFibmluZS1hdXRoLTM0MDAxNS5pYW0uZ3NlcnZpY2VhY2NvdW50LmNvbSIsInVpZCI6ImE5OWY5MDU5LTFlZjctNDk0NC1hM2YyLTNhMTM5MjMyNzUxYSJ9.V2emNk4wy6iq04Hc42k4tX7G6QEcCba4YbAiY0l24dqwG_80CvWqUWzO0RLYuBtvqo1P2TKvdCCdCitOa4d4jyV7vgwU-DAFlYS2w5fMR5ic_tmSUr23oucsVOI9WRiS_D6akiAC6hjXMD0R6MmUe_S3m3qAGGunJWta7CQPlJXqtQCN5_843vI3pP7at6ob8VDwdXPqnX_3mHnm7AqH1jrbmnh7gCWyS0bVCSJS-yjkwvkHoFccm33MF6se2fAu_YWXN2-yW6jGfRhKCBFG4kV1rE7Mt5yCEMZGSnfhahrrPhr9I2QEVddw1P0kioL7bF3FMMAJNiF4Rg5BNfCXdw",
+
+	// Codeium
+	"codeium.enableConfig": {
+		"*": true,
+		"Log": true,
+	},
+	"codeium.enableSearch": true,
+
+	// Chat & Instructions
+	"chat.commandCenter.enabled": false,
+	"chat.instructionsFilesLocations": {
+		".github/instructions": true,
+		".claude/rules": true,
+		"~/.copilot/instructions": true,
+		"~/.claude/rules": true,
+		"/tmp/postman-collections-post-response.instructions.md": true,
+		"/tmp/postman-collections-pre-request.instructions.md": true,
+		"/tmp/postman-folder-post-response.instructions.md": true,
+		"/tmp/postman-folder-pre-request.instructions.md": true,
+		"/tmp/postman-http-request-post-response.instructions.md": true,
+		"/tmp/postman-http-request-pre-request.instructions.md": true,
+	},
+
+	/* 📋 Miscellaneous */
+
+	// Launch Configurations
+	"launch": {
+		"configurations": [],
+	},
+
+	// Indent Rainbow
+	"indentRainbow.lightIndicatorStyleLineWidth": 10,
+
+	// Blockman
+	"blockman.n01LineHeight": 0,
+
+	// Byesign (Signature Helper)
+	"byesig.fold": false,
+	"byesig.enabled": true,
+	"byesig.opacity": 0.5,
+	"byesig.showIcon": false,
+
+	// Media Preview
+	"mediaPreview.video.autoPlay": true,
+	"mediaPreview.video.loop": true,
+
+	// Merge Conflicts
+	"merge-conflict.autoNavigateNextConflict.enabled": true,
+
+	// VS Icons
+	"vsicons.dontShowNewVersionMessage": true,
+	"vsintellicode.java.completionsEnabled": false,
+
+	// Django IntelliSense
+	"djangointellisense.debugMessages": true,
+	"[django-html]": {
+		"djlint.enableLinting": true,
+		"editor.quickSuggestions": {
+			"other": true,
+			"comments": true,
+			"strings": true,
+		},
+	},
+
+	// DotEnv
+	"dotenv.enableAutocloaking": true,
+
+	// Database Client
+	"database-client.autoSync": true,
+
+	// LeetCode Extension
+	"leetcode.workspaceFolder": "/home/Data/GitHub/javascript-algorithms/leetcode",
+	"leetcode.defaultLanguage": "javascript",
+	"leetcode.showDescription": "Both",
+
+	// Terminal
+	"terminal.integrated.env.linux": {},
+
+	/* 🔧 Diff Editor */
+
+	"diffEditor.wordWrap": "off",
+	"diffEditor.renderSideBySide": false,
+	"diffEditor.hideUnchangedRegions.enabled": true,
+	"diffEditor.ignoreTrimWhitespace": false,
+	"editor.tokenColorCustomizations": {
+		"textMateRules": [
+			{
+				"scope": "keyword.other.dotenv",
+				"settings": {
+					"foreground": "#FF000000",
+				},
+			},
+		],
+	},
+
+	/* Others... */
+
+	"workbench.productIconTheme": "icons-carbon",
+	"@azure.argTenant": "",
+	"roo-cline.debug": false,
+	"roo-cline.allowedCommands": ["git log", "git diff", "git show"],
+	"roo-cline.deniedCommands": [],
+	"chat.planAgent.defaultModel": "deepseek-v3.2:cloud (ollama)",
+	"prettier.bracketSameLine": true,
+	"prettier.experimentalTernaries": true,
+	"prettier.singleAttributePerLine": true,
+	"prettier.useTabs": true,
+	"Prettier-SQL.SQLFlavourOverride": "postgresql",
+	"Prettier-SQL.tabulateAlias": true,
+	"chat.viewSessions.orientation": "stacked",
+	"window.newWindowProfile": "Default",
+	"zoo-code.debug": false,
+	"zoo-code.allowedCommands": ["git log", "git diff", "git show"],
+	"zoo-code.deniedCommands": [],
+}

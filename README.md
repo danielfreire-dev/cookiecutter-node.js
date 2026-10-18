@@ -11,6 +11,15 @@ Write a short sentence or two about this project and what it does. Be sure to in
 
 Here's where you can go to town on how you actually built this thing. Write as much as you can here, it's totally fine if it's not too much just make sure you write *something*. If you don't have too much experience on your resume working on the front end that's totally fine. This is where you can really show off your passion and make up for that ten fold.
 
+## Code style
+
+This template includes shared configuration for:
+
+- [Prettier](https://prettier.io/) in [`.prettierrc.json`](./.prettierrc.json)
+- Airbnb's base ESLint rules in [`.eslintrc.json`](./.eslintrc.json)
+
+Install `prettier`, `eslint`, and `eslint-config-airbnb-base` in the generated project to use these configurations.
+
 ## Optimizations
 *(optional)*
 
@@ -28,6 +37,4 @@ Take a look at these couple examples that I have in my own portfolio:
 **Twitter Battle:** https://github.com/alecortega/twitter-battle
 
 **Patch Panel:** https://github.com/alecortega/patch-panel
-
-
 
